@@ -1,0 +1,20 @@
+
+
+<form method="get" action="/index/search/">
+    <input type="text" name="sql"> 
+    <input type="submit" name="search">
+</form>
+
+<table border="1">
+    <th>age</th>
+    <th>salary</th>
+    {% for employee in employee_list %}
+        <tr>
+            <td>{{ employee.age }}</td>
+            <td>{{ employee.salary }}</td>
+        </tr>
+    {% endfor %}
+    
+    </table>
+
+
